@@ -1,0 +1,28 @@
+<!DOCTYPE html><html class="modern" lang="zh-cmn-Hans"><head>
+<meta content-type="text/html" charset="utf-8"/>
+<style type="text/css"> html,body{background: #000;}  .video-js{margin: auto;} .pony-title{color:#fff;text-align:center;} </style>
+
+<title>小马巴巴流媒体播放演示</title>
+  
+  
+<link href="./pony-hls/video-js.min.css" rel="stylesheet">
+<script src="./pony-hls/video.min.js"></script>
+<script src="./pony-hls/videojs-contrib-hls.min.js"></script>
+
+</head><body>
+
+	<video id="video"
+		   class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered"
+		   height="540"
+		   width="960"
+		   controls autoplay>
+
+	  <source src="./m4/index.m3u8" type="application/x-mpegurl">  
+	</video>
+	<br>
+	<h1 class="pony-title">小马巴巴流媒体播放演示</h1>
+
+<script> videojs('video'); </script>
+
+</body></html>
+
